@@ -3,6 +3,8 @@
 
 # This first function will take the target matrix (x) and put it into cached
 # memory along with its inverse to be  retrieved later and compared
+#
+# The example given by R.D. Peng was used as a template for my code
 
 makeCacheMatrix <- function(x = matrix()) {
   # Create Set function to put target matrix in cached memory
@@ -26,6 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 # This second function compares the current matrix to the cached version,
 # and if the two are identical, display the cached inverse
+#
+# The example given by R.D. Peng was used as a template for my codeS
 
 cacheSolve <- function(x, ...) {
   
