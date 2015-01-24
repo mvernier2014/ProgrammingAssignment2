@@ -1,6 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-
+# Programming assignment #3
+#
+# Matt vernier
+#
 # This first function will take the target matrix (x) and put it into cached
 # memory along with its inverse to be  retrieved later and compared
 #
@@ -29,13 +30,13 @@ makeCacheMatrix <- function(x = matrix()) {
 # This second function compares the current matrix to the cached version,
 # and if the two are identical, display the cached inverse
 #
-# The example given by R.D. Peng was used as a template for my codeS
+# The example given by R.D. Peng was used as a template for my code
 
 cacheSolve <- function(x, ...) {
   
   # If the current matrix is null, retrieve the cached version
   
-  m < x$getinverse()
+  m <- x$getinverse()
   if(!is.null(m)) {
     message ("Getting cached data")
     return(m)
@@ -45,7 +46,7 @@ cacheSolve <- function(x, ...) {
   # solution
   
   data <- x$get()
-  m <- solve(x)
+  m <- solve(data, ...)
   x$setinverse(m)
   m
   
